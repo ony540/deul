@@ -1,0 +1,315 @@
+/* 헤더 */
+
+header .logo {
+    position: fixed;
+}
+
+header .back {
+    position: fixed;
+}
+
+/* 타이틀 */
+
+.wh_title {
+    position: relative;
+    padding-top: 23.5%;
+    margin: 0 20px;
+    margin-bottom: 12.3%;
+}
+
+.wh_title img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 작가 정보 */
+
+.prof_box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 27vh;
+    width: 59%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-left: none;
+}
+
+.wh_prof {
+    width: 13.6%;
+    height: auto;
+    padding: 1.1vh 0.8vh;
+    border-left: 1px solid black;
+}
+
+.wh_prof img {
+    width: 100%;
+    height: 100%;
+}
+
+.prof_box .prof_txt {
+    margin-left: 20px;
+}
+
+.line {
+    display: none;
+}
+
+.prof_box .prof_txt>h1 {
+    font-weight: bold;
+    margin-top: 2%;
+    font-size: 0.95rem;
+    line-height: 200%;
+}
+
+.prof_box .prof_txt h5 {
+    font-size: 0.8rem;
+}
+
+.wr_txt {
+    margin: 4.2vh 20px 0 20px;
+    font-size: 0.92rem;
+    font-weight: normal;
+    line-height: 195%;
+    letter-spacing: -4.5%;
+    padding-bottom: 6.4vh;
+}
+
+.top_bg {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-bottom: 2px solid black;
+    z-index: -5;
+}
+
+/* 글목록 */
+
+.artis {
+    display: flex;
+    flex-direction: column;
+    margin: 0 calc(20px + 14.4%);
+    margin-top: 7%;
+}
+
+.artis li {
+    margin-bottom: 10px;
+}
+
+
+.artis li img {
+    width: 100%;
+    height: auto;
+}
+
+.artis li h3 {
+    text-align: right;
+    line-height: 151%;
+    font-weight: 600;
+    font-size: 0.95rem;
+    position: relative;
+    top: -2.65rem;
+    right: 10px;
+    z-index: 1;
+
+}
+
+
+/* 아이폰 se 비율 시발 */
+@media all and (max-width:320px) {
+    .artis li {
+        margin-bottom: 5px;
+    }
+
+    .artis li h3 {
+        top: -53px;
+    }
+}
+
+/* 태블릿 피씨 */
+@media all and (min-width:834px) {
+    * {
+        font-size: 28px;
+    }
+
+    .artis li h3 {
+        top: -4rem;
+        right: 25px;
+    }
+}
+
+/* 피씨 */
+@media all and (min-width:1200px) {
+    * {
+        font-size: 21px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* 타이틀 */
+
+    .wh_title {
+        position: absolute;
+        right: 0;
+        padding-top: calc(7.2vh + 5.3%);
+        margin: 0;
+        margin-right: 3.8vh;
+        width: 70%;
+        margin-bottom: 0;
+    }
+
+    /* 작가 정보 */
+
+    .prof_box {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        top: 3.8vh;
+        left: calc(3.8vh + 5.3% + 10.85%);
+        width: unset;
+        border: unset;
+        position: relative;
+    }
+
+    .wh_prof {
+        width: 4.7%;
+        height: fit-content;
+        padding: 0;
+        border-left: unset;
+    }
+
+    .prof_box .prof_txt {
+        margin-left: 5.5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: calc(309px + 2vw);
+    }
+
+
+    .prof_box .prof_txt h1 {
+        margin-right: 4.5%;
+        font-size: 1.07rem;
+    }
+
+    .prof_box .prof_txt h5 {
+        font-size: 0.72rem;
+    }
+
+    .line {
+        display: block;
+        height: 1px;
+        width: 34.8vw;
+        margin: auto 0;
+        margin-left: 0.8vw;
+        background-color: black;
+    }
+
+    .wr_txt {
+        position: fixed;
+        left: calc(3.8vh + 1.7vh);
+        bottom: 0;
+        margin: 0;
+        width: 19.5vw;
+        font-size: 0.63rem;
+        padding-bottom: 4vh;
+    }
+
+    .top_bg {
+        width: unset;
+        height: unset;
+        background-color: unset;
+        border-bottom: unset;
+    }
+
+    .sidebg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: calc(3.8vh + 22.75vw);
+        height: 100%;
+        border-right: 3px solid black;
+        background-color: white;
+        z-index: -10;
+    }
+
+
+    /* 글목록 */
+    .artis {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: -8vh;
+        margin: 0;
+        right: calc(3.8vh + 7.3%);
+    }
+
+    .artis li {
+        margin-bottom: 0;
+        margin-right: -7.3vw;
+        width: 23vw;
+        transition: all 0.5s;
+
+    }
+
+    .artis li h3 {
+        text-align: left;
+        line-height: 125%;
+        font-size: 1.15rem;
+        top: 0;
+        left: 1.4vw;
+        right: unset;
+    }
+
+    .artis li:hover {
+        transform: translatey(-13.3vh);
+    }
+
+}
+
+
+@media all and (min-width:1400px) {
+    .line {
+        width: 38vw;
+        margin-left: 1vw;
+    }
+
+
+
+}
+
+@media all and (min-width:1600px) {
+    * {
+        font-size: 22px;
+    }
+
+    .line {
+        width: 39vw;
+        margin-left: 1.2vw;
+    }
+
+}
+
+@media all and (min-width:1900px) {
+    * {
+        font-size: 28px;
+    }
+
+
+    .wr_txt {
+        font-size: 0.64rem;
+        padding-bottom: 6.3vh;
+    }
+
+    .prof_box .prof_txt {
+        width: calc(410px + 2.5vw);
+    }
+
+    .line {
+        width: 37.5vw;
+        margin-left: 1.7vw;
+    }
+}

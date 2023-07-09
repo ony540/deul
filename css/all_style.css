@@ -1,0 +1,528 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url('../images/bg/all_bg_m.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: contain;
+    background-color: #F9F9F9;
+}
+
+/* 헤더 토글따라 붙을 클래스 */
+
+header .logo {
+    position: fixed;
+}
+
+header .back {
+    position: fixed;
+}
+
+header .hd_unfix {
+    position: absolute;
+}
+
+
+/* 네비게이션 */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 21.5vw 0 0 20px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav_unfix {
+    position: relative;
+}
+
+/* 스크롤바 없애기 */
+nav::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+
+nav ul {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    width: 144.8vw;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+nav ul::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+
+
+nav ul>li {
+    margin-right: 4.8vw;
+    margin-bottom: 5.5vw;
+    width: 13.3vw;
+    box-sizing: border-box;
+}
+
+nav ul>li:first-child {
+    border: 1px black solid;
+}
+
+nav ul>li img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+.toggle {
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    padding: 1.5vw 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    transform: rotate(0deg);
+    z-index: 4;
+    cursor: pointer;
+}
+
+.tog_unfix {
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.toggle img {
+    width: 6.2vw;
+}
+
+/* 읽은 진행바 */
+
+.scroll_indicator {
+    position:fixed;
+    top: 9vw;
+    left: 0;
+    width: 100%;
+    height: 0.8vw;
+    background-color: #DDDDDD;
+}
+
+.scroll_indicator_fill {
+    width: 0%;
+    height: 100%;
+    background-color: #FFD149;
+}
+
+.scro_unfix {
+    position: relative;
+    top: 0;
+}
+
+.sidebg {
+    position: relative;
+    width: 100vw;
+    height: 53vw;
+}
+
+
+/* 전체글 페이지 */
+
+#all {
+    height: 100%;
+    margin: 0 20px;
+    width: auto;
+    background-image: none;
+    position: relative;
+}
+
+/* article */
+
+#all article {
+    text-align: center;
+    height: auto;
+    font-size: 14px;
+    margin-bottom: 65px;
+}
+
+#all #w8 {
+    margin-bottom: 0;
+    padding-bottom: 65px;
+}
+
+#all article .all_title {
+    margin: 6.6vw auto 2.6vw;
+    width: 100%;
+    height: auto;
+}
+
+#all article .all_prof {
+    margin: 0 auto;
+    width: 15%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+#all article img {
+    width: 100%;
+    height: 100%;
+}
+
+#all article h1 {
+    margin-top: 1.2vh;
+    font-family: 'Eulyoo1945-SemiBold', serif;
+    font-size: 1.08rem;
+    line-height: 180%;
+}
+
+#all article h5 {
+    font-size: 0.8rem;
+    font-family: 'Eulyoo1945-Regular';
+}
+
+#all article h4 {
+    margin-top: 4.3vh;
+    margin-bottom: 2vh;
+    font-size: 1.429rem;
+    font-family: 'Eulyoo1945-SemiBold';
+}
+
+
+#all article p {
+    margin: 0 15px;
+    text-align: left;
+    font-family: 'Eulyoo1945-Regular';
+    font-size: 0.95rem;
+    line-height: 200%;
+}
+
+/* 미개시 아티클들 */
+.all_prof_un {
+    width: 53.3vw;
+    margin: 0 auto;
+    padding: 8.5vw 0;
+}
+
+.prof_txt_un {
+    text-align: center;
+}
+
+.prof_txt_un h1 {
+    font-size: 1.143rem;
+}
+
+#all .prof_txt_un h5 {
+    font-size: 0.857rem;
+    margin-top: 1vw;
+    margin-bottom: 8.5vw;
+}
+
+#all .p_un {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 8.5vw;
+
+}
+
+#all .p_un span {
+    font-size: 1.25rem;
+    font-family: 'Eulyoo1945-SemiBold', serif;
+}
+
+#all article h3 {
+    font-family: 'Eulyoo1945-SemiBold', serif;
+    font-size: 1.2rem;
+    line-height: 196%;
+}
+
+#all article .invite {
+    width: 26.6vw;
+    margin: 0 auto;
+
+}
+
+/* 태블릿 피씨 */
+@media all and (min-width:834px) {
+    #all article h1 {
+        font-size: 22px;
+    }
+
+    #all article h5 {
+        font-size: 18px;
+    }
+
+    #all article p {
+        font-size: 20px;
+    }
+
+}
+
+/* 피씨 */
+@media all and (min-width:1200px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    * {
+        font-size: 20px;
+    }
+
+    .wrap {
+        background-image: none;
+        z-index: 0;
+    }
+
+    /* 헤더 */
+
+    header .logo {
+        position: fixed;
+        z-index: 6;
+    }
+
+    header .back {
+        position: fixed;
+        z-index: 6;
+
+    }
+
+    /* 네비 */
+
+    nav {
+        position: fixed;
+        top: 11vw;
+        right: 0;
+        padding: 0 3.8vh 0 0;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 4;
+    }
+
+    nav ul {
+        width: 18vw;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+
+    nav ul>li {
+        margin-right: 0;
+        margin-bottom: 3vh;
+        width: 6.8vh;
+        height: 6.8vh;
+        border: unset;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    nav ul li img {
+        height: 100%;
+        display: inline-block;
+        width: 6.8vh;
+    }
+
+    nav ul li .postit {
+        display: none;
+        font-size: 0;
+        margin-left: 0.6vw;
+    }
+
+    nav ul li .postit h4 {
+        margin-top: 5%;
+        line-height: 160%;
+        font-size: 1.95vh;
+        font-weight: bold;
+    }
+
+    nav ul li .postit p {
+        font-size: 1.4vh;
+    }
+
+    nav ul>li:hover {
+        width: 27.6vh;
+        height: 6.8vh;
+    }
+
+    nav ul>li:hover img {
+        border-right: 1px solid black;
+        background-color: white;
+        width: 24%;
+        z-index: -1;
+    }
+
+    nav ul>li:hover .postit {
+        display: inline-block;
+        position: absolute;
+
+    }
+
+
+    .toggle {
+        display: none;
+    }
+
+    /* 읽은 진행바 */
+    .scroll_indicator {
+        position: fixed;
+        left: 17.9vh;
+        transform-origin: left top;
+        width: 100vh;
+        height: 8px;
+        background-color: #DDDDDD;
+        transform: rotate(90deg);
+        z-index: 2;
+        /* js로 스크롤 일정값으로 되면 픽스드로 바꾸기!/ js코드 코드펜에서 들고오기 */
+    }
+
+    /* 사이드타이틀 */
+
+    #sidetitle {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        transform-origin: right bottom;
+        transform: translatex(-100%) rotate(90deg);
+        width: auto;
+        height: 17.9vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+        border-left: 2px solid black;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+    }
+
+    #sidetitle img {
+        width: 80.5vh;
+        height: auto;
+        display: block;
+    }
+
+    .sidebg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 17.9vh;
+        height: 100%;
+        background-color: white;
+        z-index: 1;
+    }
+
+    /* 글전체 */
+
+    #all {
+        background-image: url('../images/bg/all_bg_p.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 17.9vh;
+        background-size: contain;
+        background-color: #F9F9F9;
+        padding-bottom: 7%;
+        padding-top: 3.8vh;
+        z-index: 0;
+    }
+
+
+    /* article 끼리의 간격이랑 그런거 설정해야함 */
+    #all article {
+        z-index: -1;
+        margin: 0 22.7% auto calc(17.9vh + 19.6%);
+        text-align: left;
+        width: 47.86vw;
+        margin-bottom: 40px;
+        /* 위에가 알티클끼리 간격인디 나중에 퍼센트로 바꾸던지 램으로 바꾸던지 하기 */
+    }
+
+    #all #w8 {
+        margin-bottom: 40px;
+    }
+
+    #all article .all_title {
+        margin-bottom: 1.6vw;
+        width: 100%;
+        height: auto;
+    }
+
+
+    #all article .all_prof {
+        margin-left: 7.4vh;
+        width: 60px;
+        width: 7.2%;
+        display: inline-block;
+    }
+
+    #all article .prof_txt {
+        display: inline-block;
+        margin-left: 3.6vh;
+    }
+
+    #all article h1 {
+        margin-top: 0;
+        font-size: 2.8vh;
+        line-height: 140%;
+    }
+
+    #all article h5 {
+        font-size: 1.4vh;
+        margin-top: 3%;
+    }
+
+    #all article h4 {
+        font-size: 1.1rem;
+        margin: 0 7.4vh;
+        margin-top: 4.3vh;
+    }
+
+
+    #all article p {
+        margin: 0 7.4vh;
+        margin-top: 3.6vh;
+        font-size: 1.67vh;
+        line-height: 195%;
+        letter-spacing: -4.5%;
+    }
+
+    /* 미개시 아티클들 */
+    .all_prof_un {
+        width: 15.625vw;
+        min-width: 220px;
+        padding: 1.42vw 0;
+    }
+
+    .prof_txt_un h1 {
+        font-size: 1.6rem;
+    }
+
+    #all .prof_txt_un h5 {
+        font-size: 0.75rem;
+        margin-bottom: 2.34vw;
+    }
+
+    #all .p_un {
+        font-size: 0.9rem;
+        margin-bottom: 1.56vw;
+
+    }
+
+    #all .p_un span {
+        font-size: 0.9rem;
+    }
+
+    #all article h3 {
+        text-align: center;
+    }
+
+    #all article .invite {
+        width: 5.2vw;
+    }
+
+
+
+}

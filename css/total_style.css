@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Eulyoo1945-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Eulyoo1945-SemiBold';
+    font-weight: bold;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Eulyoo1945-SemiBold','Eulyoo1945-Regular','명조',serif;
+    background-color: #F9F9F9;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+
+.pc {
+    display: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 기능 클래스들 */
+
+.hidden{
+    opacity:0;
+}
+
+.hidd {
+    display: none;
+}
+
+/* 헤더 */
+
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+
+}
+
+header .logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 10.5%;
+    height: auto;
+}
+
+header .back {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 10.5%;
+    height: auto;
+    cursor: pointer;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 아이폰 se 비율 시발 */
+@media all and (max-width:320px) {
+    * {
+        font-size: 13px;
+    }
+}
+
+/* 피씨 */
+@media all and (min-width:1200px) {
+    .mobile {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    /* 헤더 */
+
+    header {
+        width: 100%;
+    }
+
+    header .logo {
+        position: fixed;
+        top: 3.8vh;
+        left: 3.8vh;
+        width: 5.3%;
+    }
+
+    header .back {
+        position: fixed;
+        top: 3.8vh;
+        right: 3.8vh;
+        width: 5.3%;
+    }
+}

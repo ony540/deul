@@ -1,0 +1,436 @@
+/* 배경 */
+
+* {
+    color: white;
+}
+
+body {
+    background-color: white;
+}
+
+.wrap {
+    background-image: url('../images/bg/home_bg_m.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header {
+    z-index: 6;
+    position: fixed;
+    height: calc(30px + 10.5vw);
+    background-color: black;
+}
+
+header .logo {
+    position: fixed;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+header .back {
+    position: fixed;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+/* 헤더 초대장 */
+header #invite {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 10.5%;
+    height: auto;
+    font-size: 0.647rem;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    font-family: 'Eulyoo1945-Regular', serif;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    color: black;
+}
+
+header #invite img {
+    margin-bottom: 0;
+}
+
+/* 레일 문구 */
+.rail {
+    font-size: 0.867rem;
+    position: fixed;
+    padding-top: calc(15px + 20.5vw);
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+    background-color: black;
+    z-index: 5;
+}
+
+/* 커서 서클 */
+#circle_cs {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: calc(15px + 20vw + 5rem);
+    z-index: 1;
+}
+
+/* 목록 이미지 */
+.homelist {
+    padding-top: calc(15px + 20.5vw + 7.917rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* 목록 사이 간격 */
+.homelist li {
+    z-index: 4;
+    mix-blend-mode: multiply;
+    margin: 0 4.65%;
+    cursor: pointer;
+}
+
+.homelist li a {
+    display: block;
+}
+
+.homelist li:nth-child(1) {
+    margin-bottom: 1.8rem;
+}
+
+.homelist li:nth-child(2) {
+    margin-top: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.homelist li:nth-child(3) {
+    margin-top: 2rem;
+    margin-bottom: 1.17rem;
+}
+
+.homelist li:nth-child(4) {
+    margin-top: 1.17rem;
+    margin-bottom: 1.83rem;
+}
+
+.homelist li:nth-child(5) {
+    margin-top: 1.83rem;
+    margin-bottom: 1.63rem;
+}
+
+.homelist li:nth-child(6) {
+    margin-top: 1.63rem;
+    margin-bottom: 1.7rem;
+}
+
+.homelist li:nth-child(7) {
+    margin-top: 1.7rem;
+    margin-bottom: 1.83rem;
+}
+
+.homelist li:nth-child(8) {
+    margin-top: 1.83rem;
+    margin-bottom: 3.26rem;
+}
+
+/* 전체보기 버튼 */
+#to_all {
+    position: relative;
+    border: 1.3px solid white;
+    background-color: black;
+    margin: 5.93rem auto 3.6rem;
+    width: 167px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#to_all a {
+    z-index: 10;
+    display: inline-block;
+}
+
+#to_all span {
+    font-size: 0.8rem;
+    z-index: 10;
+}
+
+/* 위로가기 버튼 */
+.top {
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 1rem 0 2.93rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+
+/*  초대장 팝업 버튼 */
+
+.invit_popup {
+    z-index: 2;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.invit_popup .invit_bg {
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: opacity 0.5s;
+}
+
+.invit_popup #x {
+    position: absolute;
+    width: 3vw;
+    top: 73.5vw;
+    right: 14.8vw;
+    transition: opacity 0.5s;
+
+}
+
+.invit_popup .to_form {
+    position: absolute;
+    top: 85vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55.7vw;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.invit_popup p {
+    color: black;
+    font-size: 0.674rem;
+    line-height: 158.5%;
+    text-align: center;
+    width: 15.4rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 77.4vw;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.5s;
+}
+
+/* 아이폰 se */
+@media all and (max-width:320px) {
+    .invit_popup p {
+        top: 35.8vw;
+        font-size: 9px;
+        width: 72vw;
+    }
+}
+
+/* 태블릿 */
+@media all and (min-width:834px) {
+    * {
+        font-size: 29px;
+    }
+}
+
+
+/* 피씨 */
+@media all and (min-width:1200px) {
+    * {
+        font-size: 20px;
+    }
+
+    /* 배경 */
+    .wrap {
+        background-image: url('../images/bg/home_bg_p.png');
+        background-size: cover;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+    header {
+        height: auto;
+    }
+
+    header .back {
+        filter: invert(0%);
+        -webkit-filter: invert(0%);
+    }
+
+    /* 헤더 초대장 */
+    header #invite {
+        top: calc(3.6vh + 6.5vw);
+        left: unset;
+        right: 5vh;
+        transform: translate(0, 0);
+        width: 3.8%;
+        font-size: 0.612rem;
+    }
+    header #invite:hover {
+        filter: invert(0%);
+        -webkit-filter: invert(0%);
+    }
+
+    header #invite img {
+        margin-bottom: 0.5rem;
+    }
+
+    /* 레일 문구 */
+    .rail {
+        font-size: 0.69rem;
+        padding-top: 6.4vh;
+        border-bottom: unset;
+        width: 84%;
+        left: calc(5.3% + 3.8vh);
+        background-color: transparent;
+    }
+
+    /* 커서 서클 */
+    #circle_cs {
+        position: absolute;
+        top: 39vh;
+        left: 15vw;
+        width: 31.5vw;
+        transform: translate(-50%, -50%);
+    }
+
+    /* 목록 이미지 */
+    .homelist {
+        padding-top: calc(3.6vh + 8.8vw);
+        width: 100vw;
+    }
+
+    /* 목록 사이 간격 */
+    .homelist li {
+        margin: unset;
+        position: absolute;
+    }
+
+    .homelist li:nth-child(1) {
+        width: 20.15vw;
+        margin-top: 0.73vw;
+        left: 5.2vw;
+    }
+
+    .homelist li:nth-child(2) {
+        width: 27.45vw;
+        margin: 0;
+        left: 3vw;
+        top: 34.58vw;
+    }
+
+    .homelist li:nth-child(3) {
+        width: 19.8vw;
+        margin: 0;
+        left: 34.27vw;
+    }
+
+    .homelist li:nth-child(4) {
+        width: 20.8vw;
+        margin: 0;
+        left: 19.53vw;
+        top: 25.7vw;
+
+    }
+
+    .homelist li:nth-child(5) {
+        width: 24.6vw;
+        margin: 0;
+        left: 35.8vw;
+        top: 29.9vw;
+    }
+
+    .homelist li:nth-child(6) {
+        width: 27.8vw;
+        margin-top: 2vw;
+        right: 17vw;
+    }
+
+    .homelist li:nth-child(7) {
+        width: 26.1vw;
+        margin: 0;
+        top: 34.58vw;
+        right: 18.2vw;
+    }
+
+    .homelist li:nth-child(8) {
+        width: 21.1vw;
+        margin: 0;
+        margin-top: 12.3vw;
+        right: 2.5vw;
+    }
+
+    /* 전체보기 버튼 */
+    #to_all {
+        position: absolute;
+        right: 2.65vw;
+        bottom: 2.24vw;
+        margin: 0;
+        width: 5.4vw;
+        height: 5.625vw;
+        box-sizing: border-box;
+        border-width: 1px;
+    }
+
+    #to_all span {
+        display: block;
+        line-height: 165%;
+        text-align: left;
+        font-size: 0.563rem;
+    }
+
+    #to_all span:first-child {
+        margin-top: 1.14vw;
+    }
+
+    /*  초대장 팝업 버튼 */
+
+    .invit_popup #x {
+        width: 1.46vw;
+        top: 18.28vw;
+        right: 28.5vw;
+    }
+
+    .invit_popup .to_form {
+        top: 22vw;
+        width: 28.1vw;
+    }
+
+    .invit_popup p {
+        width: unset;
+        top: 19.8vw;
+        font-size: 0.563rem;
+    }
+
+}
+
+/* 모든글 버튼 폰트크기 */
+@media all and (min-width:1400px) {
+    * {
+        font-size: 23px;
+    }
+
+}
+
+@media all and (min-width:1535px) {
+    * {
+        font-size: 25.5px;
+    }
+
+}
+
+@media all and (min-width:1687px) {
+    * {
+        font-size: 28.7px;
+    }
+}
+
+@media all and (min-width:1820px) {
+    * {
+        font-size: 31px;
+    }
+}
