@@ -1,343 +1,338 @@
 .wrap {
-    background-image: url('../images/bg/w1_bg_m.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom;
-    background-size: contain;
-    background-color: #F9F9F9;
+  background-image: url("../images/bg/w1_bg_m.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: contain;
+  background-color: #f9f9f9;
 }
 
 /* 타이틀 */
 
 .top_bg {
-    background-color: white;
-    border-bottom: 1px solid black;
+  background-color: white;
+  border-bottom: 1px solid black;
 }
 
 .wa_title {
-    position: relative;
-    padding-top: 19.8%;
-    margin: 0 20px;
+  position: relative;
+  padding-top: 19.8%;
+  margin: 0 20px;
 }
 
 .wa_title img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .sub_t {
-    font-family: 'Eulyoo1945-SemiBold';
-    text-align: center;
-    font-size: 1.1rem;
-    margin-top: 2vw;
-    padding-bottom: 12.2%;
+  font-family: "Eulyoo1945-SemiBold";
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 2vw;
+  padding-bottom: 12.2%;
 }
 
 /* 글 */
 article {
-    font-family: 'Eulyoo1945-Regular';
-    margin: 0 35px;
-    margin-top: 12.2%;
-    font-size: 0.93rem;
-    line-height: 200%;
+  font-family: "Eulyoo1945-Regular";
+  margin: 0 35px;
+  margin-top: 12.2%;
+  font-size: 0.93rem;
+  line-height: 200%;
 }
 
 /* w4 컨탠츠 이미지 */
 article p img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* 이전 다음 버튼 */
 .under_boxs {
-    margin-top: 12.2vh;
-    margin-bottom: 4.4vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  margin-top: 12.2vh;
+  margin-bottom: 4.4vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .under_boxs .arti_box {
-    width: 36.5vw;
-    height: fit-content;
-    cursor: pointer;
+  width: 36.5vw;
+  height: fit-content;
+  cursor: pointer;
 }
 
 /* 목차 */
 .ul_bg {
-    background-color: white;
-    border-top: 1px solid black;
+  background-color: white;
+  border-top: 1px solid black;
 }
 
 .artis_list {
-    margin-top: 4.2vh;
-    margin-left: 35px;
-    padding-bottom: 12vh;
-    font-size: 0.93rem;
+  margin-top: 4.2vh;
+  margin-left: 35px;
+  padding-bottom: 12vh;
+  font-size: 0.93rem;
 }
 
 .artis_list li {
-    margin-bottom: 0.98rem;
-    font-family: 'Eulyoo1945-Regular';
-    text-decoration-line: underline;
+  margin-bottom: 0.98rem;
+  font-family: "Eulyoo1945-Regular";
+  text-decoration-line: underline;
 }
 
 /* 태블릿 */
-@media all and (min-width:834px) {}
+@media all and (min-width: 834px) {
+}
 
 /* 피씨 */
-@media all and (min-width:1200px) {
-    * {
-        font-size: 21px;
-    }
+@media all and (min-width: 1200px) {
+  * {
+    font-size: 21px;
+  }
 
-    .wrap {
-        position: absolute;
-        background-image: url('../images/bg/w1_bg1_p.png');
-        height: unset;
-        padding-bottom: 85vh;
-    }
+  .wrap {
+    position: absolute;
+    background-image: url("../images/bg/w1_bg_p.png");
+    height: unset;
+    padding-bottom: 85vh;
+  }
 
-    /* 타이틀 */
-    .wa_title {
-        position: absolute;
-        right: 0;
-        padding-top: calc(7.2vh + 5.3%);
-        background-color: #F9F9F9;
-        margin: 0;
-        margin-right: 3.8vh;
-        width: 65%;
-        transform: all 0.5s;
-    }
+  /* 타이틀 */
+  .wa_title {
+    position: absolute;
+    right: 0;
+    padding-top: calc(7.2vh + 5.3%);
+    background-color: #f9f9f9;
+    margin: 0;
+    margin-right: 3.8vh;
+    width: 65%;
+    transform: all 0.5s;
+  }
 
-    /* 토글따라 너비랑 마진 바뀜(중앙정렬 */
-    .wa_tit_tog {
-        margin: 0;
-        right: 50%;
-        transform: translateX(50%);
-    }
+  /* 토글따라 너비랑 마진 바뀜(중앙정렬 */
+  .wa_tit_tog {
+    margin: 0;
+    right: 50%;
+    transform: translateX(50%);
+  }
 
+  /* 토글따라 생김*/
 
-    /* 토글따라 생김*/
+  .sub_t {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    transform: rotate(90deg);
+    transform-origin: left;
+    padding-bottom: 9.6vw;
+    top: 15vh;
+    font-size: 0.85rem;
+  }
 
-    .sub_t {
-        display: none;
-        position: fixed;
-        z-index: 10;
-        transform: rotate(90deg);
-        transform-origin: left;
-        padding-bottom: 9.6vw;
-        top: 15vh;
-        font-size: 0.85rem;
-    }
+  .showen {
+    display: block;
+  }
 
-    .showen {
-        display:block;
-    }
+  /* 작가 정보 */
+  .prof_box {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    top: 3.8vh;
+    left: calc(3.8vh + 16.15vw);
+    width: unset;
+    border: unset;
+    z-index: 2;
+  }
 
+  .wa_prof {
+    position: unset;
+    width: 4.7vw;
+    height: fit-content;
+    padding: 0;
+    border-left: unset;
+  }
 
-    /* 작가 정보 */
-    .prof_box {
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        top: 3.8vh;
-        left: calc(3.8vh + 16.15vw);
-        width: unset;
-        border: unset;
-        z-index: 2;
-    }
+  /* 토글 하면 */
+  .wa_pro_tog {
+    position: relative;
+    top: calc(2.2vh + 5.3vw);
+    left: -15.8vw;
+  }
 
-    .wa_prof {
-        position: unset;
-        width: 4.7vw;
-        height: fit-content;
-        padding: 0;
-        border-left: unset;
-    }
+  .prof_box .prof_txt {
+    margin-left: 5.5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+  }
 
-    /* 토글 하면 */
-    .wa_pro_tog {
-        position: relative;
-        top: calc(2.2vh + 5.3vw);
-        left: -15.8vw;
-    }
+  .prof_box .prof_txt h1 {
+    margin-right: 1.5vw;
+    font-size: 1.07rem;
+    line-height: 160%;
+  }
 
-    .prof_box .prof_txt {
-        margin-left: 5.5vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: fit-content;
-    }
+  .prof_box .prof_txt h5 {
+    font-size: 0.72rem;
+  }
 
+  .line {
+    display: block;
+    height: 1px;
+    width: 33.5vw;
+    margin: auto 0;
+    margin-left: 0.8vw;
+    background-color: black;
+  }
 
-    .prof_box .prof_txt h1 {
-        margin-right: 1.5vw;
-        font-size: 1.07rem;
-        line-height: 160%;
-    }
+  /* 라인 토글 닫았을때 - 맨위면 안보이고 서브타이틀 보이면 얘도 보이고 */
 
-    .prof_box .prof_txt h5 {
-        font-size: 0.72rem;
-    }
+  .top_bg {
+    background-color: unset;
+    border-bottom: unset;
+  }
 
-    .line {
-        display: block;
-        height: 1px;
-        width: 33.5vw;
-        margin: auto 0;
-        margin-left: 0.8vw;
-        background-color: black;
-    }
+  .blind {
+    position: fixed;
+    width: 100%;
+    height: calc(7.2vh + 6.5%);
+    background-color: #f9f9f9;
+    z-index: 1;
+  }
 
-    /* 라인 토글 닫았을때 - 맨위면 안보이고 서브타이틀 보이면 얘도 보이고 */
+  /* 스크롤 따라 미니 타이틀 */
+  .wa_mini_title {
+    height: 3.23vw;
+    position: absolute;
+    left: 24.5vw;
+    background-color: #f9f9f9;
+    padding-right: 2.5vw;
+  }
 
-    .top_bg {
-        background-color: unset;
-        border-bottom: unset;
-    }
+  /* 토글 옆에 안보이면 미니타이틀 위치 */
+  .wa_mini_tit_tog {
+    left: calc(15.1vw - 3.8vh);
+  }
 
-    .blind {
-        position: fixed;
-        width: 100%;
-        height: calc(7.2vh + 6.5%);
-        background-color: #F9F9F9;
-        z-index: 1;
-    }
+  /* 글 */
+  article {
+    font-family: "Eulyoo1945-Regular";
+    width: 37.4vw;
+    margin: 0 calc(3.8vh + 17.2vw) 0 calc(3.8vh + 40.15vw);
+    position: relative;
+    top: calc(7.2vh + 42vw);
+    /* 위에꺼 작가마다 바뀜 */
+    z-index: 0;
+    transform: all 0.2s;
+  }
 
+  /* 토글 하면 */
+  .arti_tog {
+    margin: 0 auto;
+  }
 
-    /* 스크롤 따라 미니 타이틀 */
-    .wa_mini_title {
-        height: 3.23vw;
-        position: absolute;
-        left: 24.5vw;
-        background-color: #F9F9F9;
-        padding-right: 2.5vw;
-    }
+  article p {
+    font-size: 0.642rem;
+    line-height: 180%;
+  }
 
-    /* 토글 옆에 안보이면 미니타이틀 위치 */
-    .wa_mini_tit_tog {
-        left: calc(15.1vw - 3.8vh); 
-    }
+  /* 이전 다음 버튼 */
+  .under_boxs {
+    margin-top: 9.4vh;
+    margin-bottom: 4.4vh;
+  }
 
-    /* 글 */
-    article {
-        font-family: 'Eulyoo1945-Regular';
-        width: 37.4vw;
-        margin: 0 calc(3.8vh + 17.2vw) 0 calc(3.8vh + 40.15vw);
-        position: relative;
-        top: calc(7.2vh + 42vw);
-        /* 위에꺼 작가마다 바뀜 */
-        z-index: 0;
-        transform: all 0.2s;
-    }
+  .under_boxs .arti_box {
+    width: 16.45vw;
+  }
 
-    /* 토글 하면 */
-    .arti_tog {
-        margin: 0 auto;
-    }
+  /* 목차 */
+  .ul_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(3.8vh + 22.75vw);
+    height: 100%;
+    border-right: 3px solid black;
+    border-top: none;
+    z-index: 1;
+  }
 
-    article p {
-        font-size: 0.642rem;
-        line-height: 180%;
-    }
+  /* 토글 하면 */
+  .ul_tog {
+    transform: all 1s;
+    left: calc(-3.8vh - 21.75vw);
+  }
 
-    /* 이전 다음 버튼 */
-    .under_boxs {
-        margin-top: 9.4vh;
-        margin-bottom: 4.4vh;
-    }
+  .artis_list {
+    position: absolute;
+    bottom: 1.5rem;
+    margin-top: unset;
+    margin-left: calc(3.8vh + 1.1vw);
+    padding-bottom: unset;
+    /* width: 19vw; */
+  }
 
-    .under_boxs .arti_box {
-        width: 16.45vw;
-    }
+  .artis_list li a {
+    margin-bottom: 2rem;
+    font-size: 0.857rem;
+  }
 
-    /* 목차 */
-    .ul_bg {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: calc(3.8vh + 22.75vw);
-        height: 100%;
-        border-right: 3px solid black;
-        border-top: none;
-        z-index: 1;
-    }
+  .arti_toggle {
+    transform: rotate(180deg);
+    width: 3.8vh;
+    height: 4vh;
+    position: fixed;
+    left: 21.65vw;
+    bottom: 2.4vh;
+  }
 
-    /* 토글 하면 */
-    .ul_tog{
-        transform: all 1s;
-        left: calc(-3.8vh - 21.75vw);
-    }
-
-    .artis_list {
-        position: absolute;
-        bottom: 1.5rem;
-        margin-top: unset;
-        margin-left: calc(3.8vh + 1.1vw);
-        padding-bottom: unset;
-        /* width: 19vw; */
-    }
-
-    .artis_list li a {
-        margin-bottom: 2rem;
-        font-size: 0.857rem;
-    }
-
-    .arti_toggle {
-        transform: rotate(180deg);
-        width: 3.8vh;
-        height: 4vh;
-        position: fixed;
-        left: 21.65vw;
-        bottom: 2.4vh;
-    }
-
-    /* 토글 하면 */
-    .toggle_tog {
-        transform: rotate(0deg);
-        left: 2.5vw;
-    }
-
+  /* 토글 하면 */
+  .toggle_tog {
+    transform: rotate(0deg);
+    left: 2.5vw;
+  }
 }
 
-@media all and (min-width:1400px) {
-    .line {
-        width: 38vw;
-        margin-left: 1.2vw;
-    }
+@media all and (min-width: 1400px) {
+  .line {
+    width: 38vw;
+    margin-left: 1.2vw;
+  }
 }
 
-@media all and (min-width:1600px) {
-    * {
-        font-size: 22px;
-    }
+@media all and (min-width: 1600px) {
+  * {
+    font-size: 22px;
+  }
 
-    .line {
-        width: 38vw;
-        margin-left: 0.9vw;
-    }
+  .line {
+    width: 38vw;
+    margin-left: 0.9vw;
+  }
 
-    .wa_title {
-        width: 68%;
-    }
-
+  .wa_title {
+    width: 68%;
+  }
 }
 
-@media all and (min-width:1850px) {
-    * {
-        font-size: 28px;
-    }
+@media all and (min-width: 1850px) {
+  * {
+    font-size: 28px;
+  }
 
-    .line {
-        width: 37.5vw;
-        margin-left: 1.5vw;
-    }
+  .line {
+    width: 37.5vw;
+    margin-left: 1.5vw;
+  }
 
-    .wa_title {
-        width: 70%;
-    }
+  .wa_title {
+    width: 70%;
+  }
 }
